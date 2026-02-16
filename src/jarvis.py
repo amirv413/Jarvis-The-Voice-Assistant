@@ -40,7 +40,9 @@ def sr_init() -> sr.Recognizer:
 
 def run_assistant(r):
 
-    user_mode = input(speak("Do you want to type or talk?"))
+    speak("Do you want to type or talk?")
+
+    user_mode = input("chose your mode:  type/talk \n")
 
     while True:
 
